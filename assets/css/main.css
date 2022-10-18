@@ -3511,7 +3511,7 @@ html {
 }
 @media screen and (max-width: 630px) {
     .modal-content {
-        margin: 9% auto;
+        margin: 12% auto;
         width: 35em;
     }
     .modal-header {
@@ -3528,7 +3528,7 @@ html {
 }
 @media screen and (max-width: 470px) {
     .modal-content {
-        margin: 10% auto;
+        margin: 13% auto;
         width: 25em;
     }
 }
