@@ -1,10 +1,6 @@
 @import url("fontawesome-all.min.css");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic");
 
-/* Reset */
-
-/* Based on meyerweb.com/eric/tools/css/reset (v2.0 | 20110126 | License: public domain) */
-
 html,
 body,
 div,
@@ -193,7 +189,7 @@ body,
 input,
 select,
 textarea {
-    color: #777;
+    color: rgb(83, 83, 83);
     font-family: "Source Sans Pro", sans-serif;
     font-size: 16pt;
     font-weight: 300;
@@ -230,6 +226,10 @@ i {
 
 p {
     margin: 0 0 2em 0;
+}
+
+#less-margin {
+    margin-bottom: 0em;
 }
 
 h1,
@@ -2139,7 +2139,7 @@ header.major h2 {
 header.major p {
     display: inline-block;
     border-top: solid 2px #e5e5e5;
-    color: #777;
+    color: rgb(83, 83, 83);
     margin: 1.5em 0 0 0;
     padding: 1.5em 0 0 0;
     font-style: normal;
@@ -3553,9 +3553,11 @@ html {
     cursor: pointer;
 }
 
-#services,
-#cta {
+#services {
     scroll-margin-top: 100px;
+}
+#cta {
+    scroll-margin-top: 50px;
 }
 
 .service-header {
@@ -3564,6 +3566,32 @@ html {
 @media screen and (max-width: 736px) {
     .service-header {
         padding-bottom: 0;
+    }
+}
+
+#contact-icon-container {
+    padding: 0 30%;
+}
+.flex {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex > p {
+    margin: auto 0;
+    padding: 0 1em;
+    color: black !important;
+}
+
+@media screen and (max-width: 558px) {
+    .flex > p {
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 405px) {
+    .flex > p {
+        font-size: 10px;
     }
 }
 
@@ -3583,6 +3611,9 @@ html {
 
     #banner {
         padding: 7em 0 18em 0;
+    }
+    #contact-icon-container {
+        padding: 0 30%;
     }
 }
 
@@ -3613,6 +3644,9 @@ html {
     #banner h2 {
         font-size: 3.5em;
     }
+    #contact-icon-container {
+        padding: 0 25%;
+    }
 }
 
 /* Narrow */
@@ -3625,6 +3659,9 @@ html {
     select,
     textarea {
         font-size: 11pt;
+    }
+    #contact-icon-container {
+        padding: 0 25%;
     }
 }
 
@@ -3870,6 +3907,9 @@ html {
     #landingLogo {
         max-width: 24em;
     }
+    #contact-icon-container {
+        padding: 0 18%;
+    }
 }
 
 /* Mobile */
@@ -4004,12 +4044,19 @@ html {
         margin-left: 0;
         padding-left: 0;
     }
+    #contact-icon-container {
+        padding: 0 15%;
+    }
 }
 
 /* Mobile (Portrait) */
 
 @media screen and (max-width: 480px) {
     /* Basic */
+
+    #contact-icon-container {
+        padding: 0 5%;
+    }
 
     html,
     body {
