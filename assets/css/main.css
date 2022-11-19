@@ -3560,6 +3560,10 @@ html {
     scroll-margin-top: 50px;
 }
 
+.servicer-container {
+    margin-top: 2em;
+}
+
 .service-header {
     padding-bottom: 1em;
 }
@@ -3970,6 +3974,14 @@ html {
         margin: 2em 0 0 0 !important;
         padding: 2em 0 0 0 !important;
         width: 100%;
+    }
+
+    #the-last {
+        padding-top: 2em;
+        border-top: solid 1px #e5e5e5 !important;
+    }
+    #the-last h3 {
+        font-size: 1.25em;
     }
 
     .box.features .features-row:first-child section:first-child {
